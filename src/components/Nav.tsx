@@ -13,7 +13,7 @@ const Nav = () => {
       <button className="md:hidden" onClick={toggleNav}>
         <Icon icon="cbi:tesla-trunk" width="21px" height="21px"  style={{color: 'white'}} />
       </button>
-        <div className={clsx("absolute md:relative left-0 top-0 w-full h-full md:h-fit md:w-2/3 bg-black/90 md:bg-transparent z-40 ",navOpen && 'hidden') }>
+        <div className={clsx(" md:block absolute md:relative left-0 top-0 w-full h-full md:h-fit md:w-2/3 bg-black/90 md:bg-transparent z-40 ", navOpen && 'hidden') }>
         <ul className="  flex flex-col items-center md:items-start md:flex-row md:inline-flex md:justify-between w-full  ">
         {['Model S', 'Model 3', Tesla, 'Model X', 'Model Y'].map((nav, index) => {
           return nav.includes('Model')? <li key={index} className="cursor-pointer h-fit "  > {nav}</li> : <img key={index} src={nav} alt="tesla"  className='order-first md:order-none md:relative md:top-[-30px] w-[50px] h-[45px] md:h-[103px] md:w-[113px]'  />
