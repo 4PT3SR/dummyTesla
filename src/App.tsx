@@ -16,7 +16,7 @@ const App = () => {
       <div className={clsx(`w-full h-full half text-yellow-600`)} style={{backgroundColor:color}}>
         
       </div>
-      <div className="w-screen h-screen  absolute top-0 px-2 md:px-20 flex flex-col justify-between pb-2 overflow-hidden">
+      <div className="w-screen h-screen  absolute top-0 px-2 md:px-20 flex flex-col justify-between pb-2 overflow-x-scroll no-scrollbar ">
       <Nav></Nav>
       <Car></Car>
       <Footer />
